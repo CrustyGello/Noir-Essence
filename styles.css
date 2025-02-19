@@ -1,5 +1,9 @@
 /* General Styles */
 body {
+    background: #000000 url('logo.png') no-repeat center center fixed;
+    background-size: contain;
+    color: #F5F5DC;
+
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;

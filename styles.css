@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background: #000000 url('logo.png') no-repeat center center fixed;
+    background: url('logo.png') no-repeat center center fixed;
     background-size: contain;
     color: #F5F5DC;
 

@@ -1,45 +1,66 @@
 /* General Styles */
 body {
-   
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #000000; /* Black background */
-    color: #F5F5DC; /* Ivory text */
+    background-color: #000000;
+    color: #F5F5DC;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background: #000000; /* Black */
-    color: #D4AF37; /* Gold */
-    padding: 15px;
-    font-size: 20px;
+    background: #000000;
+    color: #D4AF37;
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #D4AF37;
 }
 
 nav a {
-    color: #D4AF37; /* Gold */
+    color: #D4AF37;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    padding: 60px;
-    background: #000000; /* changed to black */
-    color: #F5F5DC; /* Ivory */
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    color: #F5F5DC;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
-    background: #D4AF37; /* Gold */
-    color: #000000; /* Black */
+    padding: 14px 28px;
+    background: #D4AF37;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 20px;
+    border: 2px solid #D4AF37;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: none;
+    color: #D4AF37;
 }
 
 /* Products */
@@ -47,16 +68,22 @@ nav a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px;
 }
 
 .product {
     margin: 15px;
-    padding: 15px;
-    background: #0B3D2E; /* Dark Green */
-    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
-    width: 250px;
+    padding: 20px;
+    background: #0B3D2E;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.3);
+    width: 280px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.5);
 }
 
 .product img {
@@ -70,32 +97,50 @@ nav a {
     flex-direction: column;
     max-width: 400px;
     margin: auto;
+    padding: 20px;
 }
 
 .contact input, .contact textarea {
     margin: 10px 0;
     padding: 12px;
     width: 100%;
-    border: 2px solid #D4AF37; /* Gold */
-    background: #000000; /* Black */
-    color: #F5F5DC; /* Ivory */
+    border: 2px solid #D4AF37;
+    background: #000000;
+    color: #F5F5DC;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
 }
 
+.contact input:focus, .contact textarea:focus {
+    border-color: white;
+    outline: none;
+}
+
+/* Button */
 button {
-    background: #D4AF37; /* Gold */
+    background: #D4AF37;
     color: #000000;
-    padding: 12px;
+    padding: 14px;
     border: none;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: none;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
 }
 
 /* Footer */
 footer {
-    background: #000000; /* Black */
-    color: #D4AF37; /* Gold */
-    padding: 10px;
+    background: #000000;
+    color: #D4AF37;
+    padding: 15px;
     margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #D4AF37;
 }

@@ -1,38 +1,47 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: #000000; /* Black background */
+    color: #F5F5DC; /* Ivory text */
 }
 
+/* Header */
 header {
-    background: #2c3e50;
-    color: white;
+    background: #000000; /* Black */
+    color: #D4AF37; /* Gold */
     padding: 15px;
+    font-size: 20px;
 }
 
 nav a {
-    color: white;
+    color: #D4AF37; /* Gold */
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
-    padding: 50px;
-    background: #1abc9c;
-    color: white;
+    padding: 60px;
+    background: #4A1C2E; /* Deep Burgundy */
+    color: #F5F5DC; /* Ivory */
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: #2c3e50;
-    color: white;
+    padding: 12px 24px;
+    background: #D4AF37; /* Gold */
+    color: #000000; /* Black */
     text-decoration: none;
-    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
+/* Products */
 .products {
     display: flex;
     justify-content: center;
@@ -42,32 +51,50 @@ nav a {
 
 .product {
     margin: 15px;
-    padding: 10px;
-    background: white;
-    box-shadow: 0px 0px 10px #ccc;
-    width: 200px;
+    padding: 15px;
+    background: #0B3D2E; /* Dark Green */
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.3);
+    width: 250px;
+    border-radius: 10px;
 }
 
 .product img {
     width: 100%;
+    border-radius: 5px;
 }
 
+/* Contact Form */
 .contact form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
 }
 
 .contact input, .contact textarea {
-    margin: 5px 0;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 12px;
     width: 100%;
+    border: 2px solid #D4AF37; /* Gold */
+    background: #000000; /* Black */
+    color: #F5F5DC; /* Ivory */
 }
 
+button {
+    background: #D4AF37; /* Gold */
+    color: #000000;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Footer */
 footer {
-    background: #2c3e50;
-    color: white;
+    background: #000000; /* Black */
+    color: #D4AF37; /* Gold */
     padding: 10px;
     margin-top: 20px;
 }
